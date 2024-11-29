@@ -1,14 +1,12 @@
 body {
   font-family: Arial, sans-serif; /* Change the font for the entire body */
-  background-color:rgb(243, 214, 176) /* Light background color */
+  background-color: rgb(243, 214, 176); /* Light background color */
   padding: 20px; /* Add some padding to the body */
-  
 }
 
 .recipe-list {
   list-style-type: none; /* Remove default bullet points */
   padding: 0; /* Remove default padding */
- 
 }
 
 .recipe-list li {
