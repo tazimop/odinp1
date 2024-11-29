@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif; /* Change the font for the entire body */
+  background-color:rgb(243, 214, 176) /* Light background color */
+  padding: 20px; /* Add some padding to the body */
+  
+}
+
+.recipe-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+ 
+}
+
+.recipe-list li {
+  margin: 10px 0; /* Add margin between list items */
+}
+
+.recipe-list a {
+  display: block; /* Make the link a block element */
+  padding: 10px; /* Add padding for better click area */
+  background-color: #8eecf3; /* Bootstrap primary color */
+  color: rgb(83, 76, 76); /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.recipe-list a:hover {
+  background-color: #6ba5e3; /* Darker shade on hover */
+}
+
+.recipe-list a:focus {
+  outline: 2px solid #9bc9fa; /* Outline for accessibility */
+}
