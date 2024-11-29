@@ -1,32 +1,63 @@
 body {
-  font-family: Arial, sans-serif; /* Change the font for the entire body */
-  background-color: rgb(243, 214, 176); /* Light background color */
-  padding: 20px; /* Add some padding to the body */
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 3em;
+  color: #2c3e50; /* Darker color for the main title */
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  color: #34495e; /* Slightly lighter color for the subtitle */
 }
 
 .recipe-list {
-  list-style-type: none; /* Remove default bullet points */
-  padding: 0; /* Remove default padding */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .recipe-list li {
-  margin: 10px 0; /* Add margin between list items */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .recipe-list a {
-  display: block; /* Make the link a block element */
-  padding: 10px; /* Add padding for better click area */
-  background-color: #8eecf3; /* Bootstrap primary color */
-  color: rgb(83, 76, 76); /* Text color */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.3s;
 }
 
 .recipe-list a:hover {
-  background-color: #6ba5e3; /* Darker shade on hover */
-}
-
-.recipe-list a:focus {
-  outline: 2px solid #9bc9fa; /* Outline for accessibility */
+  color: #0056b3;
 }

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b4888b; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: auto; /* Center the container */
+    background: #daceb6; /* White background for the recipe card */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the main title */
+    color: #4a4a4a; /* Darker color for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.recipe-image {
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+.time-table {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    background-color: #e0f7fa; /* Light cyan background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding around the table */
+    margin: 20px 0; /* Space around the table */
+}
+
+.time-item {
+    flex: 1; /* Equal space for each item */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding for items */
+    border-right: 1px solid #b2ebf2; /* Light border */
+}
+
+.time-item:last-child {
+    border-right:
