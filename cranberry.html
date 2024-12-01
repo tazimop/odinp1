@@ -3,66 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cranberry Sauce Recipe</title>
+    <link rel="stylesheet" href="cranberry.css" />
   </head>
-  <style>
-    body {
-      background-color: antiquewhite;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-    table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      border-radius: 10px;
-      width: 25%;
-    }
-  </style>
   <body>
-    <h1>Cranberry sauce recipe</h1>
-    <br />
-    <image
-      src="attachments/Whole-Berry-Cranberry-Sauce-1.jpg"
-      width="300px"
-    ></image>
-    <table>
-      <tr>
-        <td>Prep time:</td>
-        <td>Cook time:</td>
-        <td>Total time:</td>
-      </tr>
-      <td>5 mins</td>
-      <td>15 mins</td>
-      <td>20 mins</td>
-      <tr></tr>
-    </table>
-    <h4>Description</h4>
-    <p>
-      Skip the store-bought stuff this year and serve homemade cranberry sauce.
-      It's actually way easier than you think. You can make this top-rated
-      recipe, which has more than 2,000 rave reviews from All recipes community
-      members, with just three ingredients. Learn how to make, store, freeze,
-      and serve the best cranberry sauce ever.
-    </p>
-    <h4>Cranberry sauce ingredients:</h4>
-    <ul>
-      <li>Fresh Cranberries</li>
-      <li>Sugar</li>
-      <li>Orange juice</li>
-    </ul>
-    <h4>Steps</h4>
-    <ol>
-      <li>Gather all ingredients.</li>
-      <li>
-        Dissolve sugar in orange juice in a medium saucepan over medium heat.
-      </li>
-      <li>
-        Stir in cranberries and cook until they start to pop, about 8 to 10
-        minutes.
-      </li>
-      <li>
-        Remove from heat and place sauce in a bowl. It will thicken as it cools.
-      </li>
-      <li>Enjoy!</li>
-    </ol>
+    <header>
+      <h1 class="header">Cranberry Sauce Recipe</h1>
+    </header>
+
+    <main>
+      <section class="image-container">
+        <img
+          src="attachments/Whole-Berry-Cranberry-Sauce-1.jpg"
+          width="300"
+          alt="Cranberry Sauce"
+          title="cranberry sauce"
+        />
+      </section>
+
+      <section class="table-container">
+        <h2>Preparation Time</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Prep Time</th>
+              <th>Cook Time</th>
+              <th>Total Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5 mins</td>
+              <td>15 mins</td>
+              <td>20 mins</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="description-container">
+        <p class="description">
+          Skip the store-bought stuff this year and serve homemade cranberry
+          sauce. It's actually way easier than you think. You can make this
+          top-rated recipe, which has more than 2,000 rave reviews from All
+          Recipes community members, with just three ingredients. Learn how to
+          make, store, freeze, and serve the best cranberry sauce ever.
+        </p>
+      </section>
+
+      <section class="ingredients-container">
+        <h2>Ingredients:</h2>
+        <ul class="ingredients-list">
+          <li>Fresh Cranberries</li>
+          <li>Sugar</li>
+          <li>Orange Juice</li>
+        </ul>
+      </section>
+
+      <section class="steps-container">
+        <h2>Steps</h2>
+        <ol class="steps-list">
+          <li>Gather all ingredients.</li>
+          <li>
+            Dissolve sugar in orange juice in a medium saucepan over medium
+            heat.
+          </li>
+          <li>
+            Stir in cranberries and cook until they start to pop, about 8 to 10
+            minutes.
+          </li>
+          <li>
+            Remove from heat and place sauce in a bowl. It will thicken as it
+            cools.
+          </li>
+          <li>Enjoy!</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Cranberry Sauce Recipe. All rights reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,173 @@
+body {
+  background-color: rgb(214, 224, 233);
+  font-family: Arial, sans-serif;
+}
+.header {
+  font-size: 3em; /* Large font size */
+  font-weight: bold; /* Bold text */
+  color: #b22222; /* Dark red color */
+  text-align: center; /* Center the text */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 2px; /* Spacing between letters */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Padding around the text */
+  background: linear-gradient(
+    to right,
+    #ff7f50,
+    #df9f88
+  ); /* Gradient background */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text fill transparent */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+}
+.image-container {
+  text-align: center; /* Centers the image horizontally */
+  margin: 20px 0; /* Adds some space above and below the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.table-container {
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.styled-table {
+  width: 60%;
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.styled-table thead {
+  background-color: #eef1b3;
+  color: #8c7f7f;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #d5d3d3;
+}
+
+.description-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%; /* Responsive width */
+  max-width: 600px; /* Maximum width */
+  margin: 20px 0; /* Adds some space above and below the description */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the content vertically */
+}
+
+.description {
+  font-size: 1.2em; /* Larger font size */
+  line-height: 1.6; /* Increased line height for readability */
+  color: #333; /* Darker text color */
+  text-align: justify; /* Justified text alignment */
+}
+
+.description::first-letter {
+  font-size: 2em; /* Larger first letter */
+  font-weight: bold; /* Bold first letter */
+  color: #007bff; /* Different color for the first letter */
+  float: left; /* Float the first letter to the left */
+  margin-right: 5px; /* Space between the first letter and the text */
+}
+.ingredients-list {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 20px 0; /* Adds space above and below the list */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.ingredients-list li {
+  position: relative; /* Allows absolute positioning of the pseudo-element */
+  background-color: #ffffff; /* White background for each item */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px 20px; /* Padding inside each item */
+  margin: 10px 0; /* Space between list items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.ingredients-list li::before {
+  content: "✔"; /* Checkmark icon */
+  position: absolute; /* Position it relative to the list item */
+  left: 10px; /* Position it to the left */
+  top: 50%; /* Center it vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  font-size: 20px; /* Size of the icon */
+  color: #4caf50; /* Color of the icon */
+}
+
+.ingredients-list li:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+h4 {
+  font-family: "Arial", sans-serif; /* Clean font */
+  font-size: 24px; /* Size of the heading */
+  color: #333; /* Dark grey color for text */
+  border-bottom: 2px solid #4caf50; /* Green underline */
+  padding-bottom: 10px; /* Space below the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: left; /* Align text to the left */
+}
+
+.steps-list {
+  list-style: none; /* Remove default numbering */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  font-family: "Verdana", sans-serif; /* Modern font for the list */
+  font-size: 18px; /* Font size for list items */
+  line-height: 1.6; /* Increases line height for readability */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.steps-list li {
+  background-color: #ffffff; /* White background for each item */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside each item */
+  margin: 10px 0; /* Space between list items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative; /* Position for the icon */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+.steps-list li::before {
+  content: ""; /* Empty content for the icon */
+  background-image: url("https://img.icons8.com/material-outlined/24/4CAF50/checkmark.png"); /* Checkmark icon */
+  background-size: cover; /* Cover the entire area */
+  width: 30px; /* Width of the icon */
+  height: 30px; /* Height of the icon */
+  margin-right: 15px; /* Space between icon and text */
+}
+
+.steps-list li:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.steps-list li:last-child {
+  border-bottom: none; /* Remove bottom border for last item */
+}
