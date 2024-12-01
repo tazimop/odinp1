@@ -108,7 +108,7 @@ body {
 }
 
 .ingredients-list li::before {
-  content: "✔"; /* Checkmark icon */
+  content: "✔"; /*  icon */
   position: absolute; /* Position it relative to the list item */
   left: 10px; /* Position it to the left */
   top: 50%; /* Center it vertically */
@@ -156,7 +156,7 @@ h4 {
 
 .steps-list li::before {
   content: ""; /* Empty content for the icon */
-  background-image: url("https://img.icons8.com/material-outlined/24/4CAF50/checkmark.png"); /* Checkmark icon */
+  background-image: url("https://img.icons8.com/material-outlined/24/4CAF50/checkmark.png"); /* icon */
   background-size: cover; /* Cover the entire area */
   width: 30px; /* Width of the icon */
   height: 30px; /* Height of the icon */
