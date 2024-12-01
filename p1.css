@@ -17,14 +17,14 @@ body {
 h1 {
   margin-bottom: 10px;
   font-size: 3em;
-  color: #2c3e50; /* Darker color for the main title */
+  color: #2c3e50; /* darker color for the main title */
   text-transform: uppercase;
 }
 
 h3 {
   margin-bottom: 30px;
   font-size: 1.5em;
-  color: #34495e; /* Slightly lighter color for the subtitle */
+  color: #34495e;
 }
 
 .recipe-list {
