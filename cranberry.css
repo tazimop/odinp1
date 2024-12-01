@@ -6,15 +6,14 @@ body {
 .header {
   font-size: 3em;
   font-weight: bold;
-  color: #b22222;
+  color: #fffbfb;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
   padding: 20px;
-  background: linear-gradient(to right, #ff7f50, #df9f88);
+  background: linear-gradient(to right, #f4d042, #dfb488);
 
-  -webkit-text-fill-color: transparent;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
